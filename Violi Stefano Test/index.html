@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stefano Violi Test</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/css.css" />
+  </head>
+  <body>
+    <!-- INIZIO HEADER / navbar -->
+    <header>
+      <div class="container">
+      <div class="d-flex justify-content-end mt-5">
+       <a href="#"><i class="bi bi-person-circle"></i></a>
+      </div>
+      <div class="">      
+      <h4>Benvenuto nel tuo CRM</h4>
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="#">CRM</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Cliente</li>
+        </ol>
+      </nav>
+    </div>
+    </div>
+    </header>
+    <!-- FINE HEADER / navbar -->
+
+    <!-- INIZIO MAIN  -->
+    <main>
+      <div id="main">
+        <div id="main_top">
+          <div class="container">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6 d-flex justify-content-evenly">
+                <button type="button" class="btn bottonigrigi fw-bold opacity-50"> <i class="bi bi-buildings"></i> Clienti</button>
+                <button type="button" class="btn bottonigrigi fw-bold opacity-50"> <i class="bi bi-buildings"></i> Prospect</button>
+                <button type="button" class="btn bottonigrigi fw-bold opacity-50"><i class="bi bi-buildings"></i> 
+                  Opportunità
+                </button>
+                <button type="button" class="btn bottonigrigi fw-bold opacity-50"><i class="bi bi-buildings"></i> Attività</button>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+        </div>
+        <div id="main_bot" class="row">
+          <div class="row col-12">
+            <div id="main_bot_right"
+              class="col-1 d-flex flex-column justify-content-evenly align-items-center flex-wrap"
+            >
+              <button type="button" class="btn bottonigrigi sidebar-btn mt-5">
+                <i class="bi bi-plus-square"></i>
+                Opportunità
+              </button>
+              <button type="button" class="btn bottonigrigi sidebar-btn">
+                <i class="bi bi-plus-square"></i>
+                Attività
+              </button>
+              <button
+                type="button"
+                id="portafoglio"
+                class="btn bottonigrigi sidebar-btn mt-4"
+              >
+              <i class="bi bi-plus-square"></i>
+                Visualizza Portafoglio
+              </button>
+            </div>
+            <div class="col-10 p-3">
+              <div class="col-12 d-flex">
+                <img class="logo" src="assets/Horned_logo.jpeg" />
+                <p id="titolo_azienda" class="pt-4">
+                  BRESSANELLI GALLI GELPI PORTA & C. S.R.L
+                </p>
+              </div>
+              <div>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6">
+                      <div
+                        class="d-flex flex-column align-items-between flex-wrap"
+                      >
+                        <div>
+                          <div class="row">
+                            <div class="col-6 opacity-50">
+                              <p>Ragione Sociale</p>
+                            </div>
+                            <div class="col-6">
+                              <p id="nome_azienda">BRESSANELLI GALLI GELPI PORTA & C. S.R.L</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6 opacity-50">
+                              <p>P.IVA</p>
+                            </div>
+                            <div class="col-6">
+                              <p id="piva">03604310130</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6 opacity-50">
+                              <p>Codice Fiscale</p>
+                            </div>
+                            <div class="col-6">
+                              <p id="codice_fiscale">03604310130</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6 opacity-50">
+                              <p>Sede</p>
+                            </div>
+                            <div class="col-6">
+                              <p id="sede">Via Canturina, 83/B,22100, Como (CO)</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6 opacity-50">
+                              <p>Telefono</p>
+                            </div>
+                            <div class="col-6">
+                              <p id="telefono">+39 031 307933</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6 opacity-50">
+                              <p>PEC</p>
+                            </div>
+                            <div class="col-6">
+                              <p id="pec">bggsrl@pect.it</p>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6 opacity-50">
+                              <p>E-mail</p>
+                            </div>
+                            <div class="col-6">
+                              <p id="email">info@bggsrl.com</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <hr />
+                          <!-- MODALE BUTTON -->
+                          <button type="button" class="btn btn-info col-12 text-light"  data-toggle="modal" data-target="#myModal" onclick="popolaCampi()">
+                            Visualizza profilo completo
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div
+                        class="d-flex flex-column justify-content-between flex-wrap"
+                      >
+                        <div>
+                          <div>
+                            <div class="d-flex justify-content-between">
+                              <div>
+                                <p>Opportunità aperte</p>
+                                <p>Nessuna Opportunità...</p>
+                              </div>
+                            <a href="#"><i class="bi bi-three-dots"></i></a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <div>
+                                <p>Attività aperte</p>
+                                <p>Nessuna Attività...</p>
+                              </div>
+                              <a href="#"><i class="bi bi-three-dots"></i></a>
+                            </div>
+                            <hr />
+                            <div>
+                              <button type="button" class="btn btn-info text-light">
+                                Arricchisci i dati con Atoka
+                              </button>
+                            </div>
+                            <hr />
+                            <div>
+                              <button type="button" class="btn btn-info text-light">
+                                Esporta file cliente
+                              </button>
+                            </div>                          
+                            <div >
+                                <hr />
+                                <button type="button" class="btn mt-4 bottonigrigi fw-semibold p-2">
+                                  Delete
+                                </button>
+                              </div>
+                          </div>
+                        </div>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1" id="grigiodestra"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="footer" class="text-center mt-5">
+        Stefano Violi Test 05/10/2023 html-css-js
+      </div>
+    </footer>
+
+        
+    
+        <!-- Modale -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+    
+                    <!-- Header del modale -->
+                    <div class="modal-header">
+                        <img src="assets/504-5040528_empty-profile-picture-png-transparent-png.png" id="img-modal">
+                        <p id="titolo"></p>
+                        <button type="button" class="close button-close" data-dismiss="modal">x</button>
+                    </div>
+    
+                    <!-- Corpo del modale -->
+                    <div class="modal-body">
+                        <form id="modificaForm">
+                          <div class="container">
+                            <div class="row fw-bold">
+                              <div class="form-group col-6">
+                                <label for="ragioneSociale">Ragione Sociale<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="ragioneSociale" value="Valore predefinito">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="pIva">Partita IVA<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="pIva" value="Valore predefinito">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="codiceFiscale">Codice Fiscale<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="codiceFiscale" value="Valore predefinito">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="sedeUno">Sede<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="sedeUno" value="Valore predefinito">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="telefonoUno">Telefono<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="telefonoUno" value="Valore predefinito">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="pecUno">PEC  <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="pecUno" value="Valore predefinito">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="emailUno">Email <span class="text-danger">*</span></label>
+                              <input type="email" class="form-control" id="emailUno" value="Valore predefinito">
+                            </div>
+                            </div>
+                          </div>                          
+                        </form>
+                    </div>
+    
+                    <!-- Footer del modale -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn bottonigrigi p-2" data-dismiss="modal">Chiudi</button>
+                        <button type="button" class="btn btn-info text-light" onclick="salvaModifiche()">Salva modifiche</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/test.js"></script>
+  </body>
+</html>

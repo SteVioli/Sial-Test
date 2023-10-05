@@ -1,0 +1,69 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-weight: bold;
+}
+
+
+//inizio barre
+.bottonigrigi{
+    background-color: #E4E6EF;
+    &:hover{
+        background-color: #03BEF4;
+    }
+    padding: 0;
+}
+
+body{
+    background-color: rgba(235, 238, 235, 0.955);
+    
+    main{
+        background-color: white;
+    }
+    .bi-person-circle {
+        font-size: 2rem;
+        opacity: 50%; 
+      }
+}
+
+
+#main_top, #main_bot_right, #grigiodestra{
+    background-color: rgba(235, 238, 235, 0.955);
+}
+
+.sidebar-btn{
+    writing-mode: vertical-rl;
+    transform: rotate(-90deg);
+};
+.logo{
+    width: 200px;
+}
+#portafoglio{
+    width: 180px;   
+}
+.modal-dialog {
+    max-width: 70%;
+    margin: 1.75rem auto;
+}
+.modal-content {
+    width: 100%;
+}
+.modal-header {
+    padding: 1rem 1.5rem;
+}
+.modal-footer {
+    padding: 1rem 1.5rem;
+}
+.button-close {
+    background: none;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+#img-modal{
+    width:100px
+}
